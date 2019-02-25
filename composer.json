@@ -5,7 +5,7 @@
   "autoload": {
     "psr-4": {
       "codexten\\yii\\user\\": "src",
-      "codexten\\yii\\models\\": "src"
+      "codexten\\yii\\models\\": "src/models"
     }
   },
   "extra": {
