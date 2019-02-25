@@ -4,14 +4,15 @@
   "description": "user for yii 2.0 or higher",
   "autoload": {
     "psr-4": {
-      "codexten\\yii\\user\\": "src"
+      "codexten\\yii\\user\\": "src",
+      "codexten\\yii\\models\\": "src"
     }
   },
   "extra": {
     "branch-alias": {
       "dev-master": "2.0.x-dev"
     },
-    "sconfig-plugin": {
+    "config-plugin": {
       "migrationNamespaces": "src/config/migrationNamespaces.php"
     }
   }

@@ -1,0 +1,15 @@
+config:
+  messageCategory: codexten:user
+migration:
+  create_user_table:
+    fields: |
+      username:string(255):notNull,
+      email:string(255),
+      password_hash:string(60),
+      auth_key:string(32),
+      logged_at:integer,
+      created_at:integer,
+      updated_at:integer
+model:
+  user:
+    ns: codexten\yii\models
