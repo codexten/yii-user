@@ -7,5 +7,5 @@
  */
 
 return [
-    'codexten\yii\user\migrations'
+    'codextend\yii\user\settings\migrations'
 ];
