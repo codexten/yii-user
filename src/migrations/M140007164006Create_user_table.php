@@ -22,8 +22,7 @@ class M140007164006Create_user_table extends Migration
             'auth_key' => $this->string(32),
             'logged_at' => $this->integer(),
             'created_at' => $this->integer(),
-            'updated_at' => $this->integer
-(),
+            'updated_at' => $this->integer(),
         ]);
     }
 
@@ -33,5 +32,15 @@ class M140007164006Create_user_table extends Migration
     public function safeDown()
     {
         $this->dropTable('{{%user}}');
+    }
+
+    /**
+     * @return array
+     */
+    public static function alternatives()
+    {
+        return [
+            'entero\user\migrations\M140007164006Create_user_table',
+        ];
     }
 }
