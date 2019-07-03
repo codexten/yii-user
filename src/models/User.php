@@ -2,10 +2,11 @@
 
 namespace codexten\yii\models;
 
+use codexten\yii\db\ActiveRecord;
+use codexten\yii\user\models\query\UserQuery;
 use Yii;
 use yii\behaviors\AttributeBehavior;
 use yii\behaviors\TimestampBehavior;
-use codexten\yii\db\ActiveRecord;
 use yii\helpers\ArrayHelper;
 
 /**
@@ -110,11 +111,11 @@ class User extends ActiveRecord
 
     /**
      * {@inheritdoc}
-     * @return \codexten\yii\user\models\query\UserQuery the active query used by this AR class.
+     * @return UserQuery the active query used by this AR class.
      */
     public static function find()
     {
-        return new \codexten\yii\user\models\query\UserQuery(get_called_class());
+        return new UserQuery(get_called_class());
     }
 
     /**
