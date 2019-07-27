@@ -35,10 +35,11 @@ class UserQuery extends \yii\db\ActiveQuery
     /**
      * @param $id
      *
-     * @return UserQuery
+     * @return $this
      */
     public function notId($id)
     {
-        return $this->andWhere(['!=', 'id', $id]);
+         $this->andWhere(['!=', 'id', $id]);
+        return $this;
     }
 }
