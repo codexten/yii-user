@@ -43,4 +43,14 @@ class UserQuery extends \yii\db\ActiveQuery
 
         return $this;
     }
+
+    /**
+     * @return $this
+     */
+    public function byRole()
+    {
+        $this->joinWith('authAssignment as authAssignment');
+
+        return $this;
+    }
 }
